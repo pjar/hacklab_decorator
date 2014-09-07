@@ -1,7 +1,7 @@
-class ProjectDecorator
+class ProjectDecorator < HacklabDecorator::Decorator
 
 end
 
-class MyProjectDecorator
+class MyProjectDecorator < HacklabDecorator::Decorator
 
 end
