@@ -2,8 +2,11 @@ module HacklabDecorator
 
   module Decoratable
 
-    def ok?
-      'It works fine!'
+    def decorate(options = {})
+      klass = options.fetch(:with) do
+        "#{self.class.name}Decorator".constantize
+      end
+      klass.new
     end
 
   end
