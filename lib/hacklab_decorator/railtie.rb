@@ -12,9 +12,7 @@ module HacklabDecorator
         HacklabDecorator.setup_action_controller self
       end
     end
-  end
 
-  class Railtie < Rails::Railtie
 
     config.after_initialize do |app|
       app.config.paths.add 'app/decorators', eager_load: true
